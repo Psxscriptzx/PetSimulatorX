@@ -1,0 +1,45 @@
+Settings = {
+    ["On Screen Trackers"] = true,
+    ["Performance"] = {
+        ["Disable 3D Rendering"] = false,
+        ["Diable Orb Rendering"] = true,
+        ["Disable Lootbags"] = true
+    },
+    ["Auto Collect"] = {
+        ["Orbs"] = true,
+        ["Lootbags"] = true
+    },
+    ["Auto Mailbox"] = {
+        ["Recipient"] = "xhenon1", -- Person To Send To
+        ["Min Dias"] = 100000000, -- Minumum Gems
+        ["Enabled"] = true
+    },
+    ["Multipliers"] = {
+    ["Giant Chest"] = 0,
+        ["Chest"] = 0,
+        ["Small Chest"] = 0,
+        ["Vault"] = 0,
+        ["Safe"] = 0,
+        ["Present"] = 0
+    },
+    ["Webhooks"] = {
+        ["Server Hop Webhook"] = "",
+        ["Time Frame Webhook"] = "",
+        ["Timeframe"] = 60 -- Seconds
+    },
+    ["Pet Team"] = {
+        ["Mode"] = "Best", -- Best Or Manual: Best = Highest Power, Manual = All Pets With A Certain Nickname
+        ["Nickname"] = "xhenon1"
+    },
+    ["Fruit"] = {
+        ["Farm Fruit If Low"] = true,
+        ["Min Fruit"] = 100, -- Starts Farming If Below This
+        ["Max Fruit"] = 150, -- Stops Farming Once Above This
+        ["Mode"] = "Pixel Vault" -- Pixel Vault or Server Hop
+    },
+    ["Boosts"] = {
+        ["Triple Damage"] = true,
+        ["Server Damage"] = true
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EgorikusaHubs/MyScripts/main/MineFarm", true))()
